@@ -27,7 +27,7 @@ $currentWorkingDirectory = $pwd
 Try
 {
     Set-Location $sourcePath
-    . "$sourcePath\configure.ps1" *>>$null
+    . "$sourcePath\configure.ps1"
 }
 Finally
 {
