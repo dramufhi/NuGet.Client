@@ -14,7 +14,7 @@ Param(
 . "$PSScriptRoot\..\PerformanceTestUtilities.ps1"
 
 $repoUrl = "https://github.com/NuGet/NuGet.Client.git"
-$commitHash = "203c517a85791243f53ea08d404ee5b8fae36e35"
+$commitHash = "788bc01a1b063a37841cdd6d035feb320e90e475"
 $repoName = GenerateNameFromGitUrl $repoUrl
 $resultsFilePath = [System.IO.Path]::Combine($resultsFolderPath, "$repoName.csv")
 $sourcePath = $([System.IO.Path]::Combine($sourceRootFolderPath, $repoName))
