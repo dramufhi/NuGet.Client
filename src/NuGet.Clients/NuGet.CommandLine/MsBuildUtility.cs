@@ -504,8 +504,8 @@ namespace NuGet.CommandLine
                         var msbuildVersion = FileVersionInfo.GetVersionInfo(msbuildExe)?.FileVersion;
                         return toolset = new MsBuildToolset(msbuildVersion, msBuildDirectory);
                     }
-                }              
-                
+                }
+
                 using (var projectCollection = LoadProjectCollection())
                 {
                     var installed = ((dynamic)projectCollection)?.Toolsets;
